@@ -1,0 +1,145 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f0e68c; /* Vàng sáng */
+    color: #333;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-logo p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333; /* Xám sáng */
+}
+
+.footer-info, .footer-links, .footer-social-icon, .footer-support, .footer-services, .footer-map {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-info h4, .footer-links h4, .footer-social-icon h4, .footer-support h4, .footer-services h4, .footer-map h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Xám sáng */
+}
+
+.footer-info p, .footer-links ul, .footer-social-icon div, .footer-support p, .footer-services ul, .footer-map {
+    margin: 5px 0;
+    color: #333; /* Xám sáng */
+}
+
+.footer-links ul, .footer-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-services li {
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333; /* Xám sáng */
+}
+
+.footer-social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-icons-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    margin: 5px 0;
+    background-color: #f0e68c; /* Vàng sáng */
+    color: #333; /* Xám sáng */
+}
+
+.footer-icons-container img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    color: #1a1a1a;
+    font-size: 16px;
+    color: #333; /* Xám sáng */
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-logo p {
+        font-size: 20px;
+    }
+
+    .footer-info h4, .footer-links h4, .footer-social-icon h4, .footer-support h4, .footer-services h4, .footer-map h4 {
+        font-size: 18px;
+    }
+
+    .footer-links li, .footer-services li {
+        font-size: 16px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+    }
+
+    .footer-map iframe {
+        width: 100%;
+        height: 200px;
+    }
+}

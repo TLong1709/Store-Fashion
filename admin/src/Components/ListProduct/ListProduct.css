@@ -1,0 +1,91 @@
+/* ListProduct.css */
+.list-product {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-product h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.listproduct-format-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1.5fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: #555;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.listproduct-allproducts {
+    margin-top: 20px;
+}
+
+.listproduct-format {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listproduct-product-icon {
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.listproduct-format p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.listproduct-remove-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.listproduct-remove-icon:hover {
+    transform: scale(1.1);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+@media(max-width: 800px){
+    .list-product{
+        box-sizing: border-box;
+        width: 95%;
+        height: 100%;
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+    .listproduct-format-main{
+        padding:  15px 0px;
+        color: #454545;
+        font-size: 12px;
+    }
+    .listproduct-product-icon{
+        height: 60px;
+    }
+}
